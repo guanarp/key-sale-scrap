@@ -1,0 +1,182 @@
+1592993661357	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Guana\\AppData\\Local\\Temp\\rust_mozprofiletkbKFd"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1592993662752	Marionette	INFO	Listening on port 51361
+1592993662887	Marionette	WARN	TLS certificate errors will be ignored for this session
+1592993697627	Marionette	INFO	Stopped listening on port 51262
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+ message was deserialized, but the handler returned false (indicating failure)
+
+1592993696039	Marionette	INFO	Stopped listening on port 51109
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+l be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+te to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+ send/recv
+
+rkup.js, line 353: NS_ERROR_NOT_AVAILABLE: 
+JavaScript error: resource://devtools/server/actors/highlighters/utils/markup.js, line 353: NS_ERROR_NOT_AVAILABLE: 
+JavaScript error: resource://devtools/server/actors/highlighters/utils/markup.js, line 353: NS_ERROR_NOT_AVAILABLE: 
+JavaScript error: resource://devtools/server/actors/highlighters/utils/markup.js, line 353: NS_ERROR_NOT_AVAILABLE: 
+JavaScript error: resource://devtools/server/actors/highlighters/utils/markup.js, line 353: NS_ERROR_NOT_AVAILABLE: 
+JavaScript error: resource://devtools/server/actors/highlighters/utils/markup.js, line 353: NS_ERROR_NOT_AVAILABLE: 
+JavaScript error: resource://devtools/server/actors/highlighters/utils/markup.js, line 353: NS_ERROR_NOT_AVAILABLE: 
+JavaScript error: resource://devtools/server/actors/highlighters/utils/markup.js, line 353: NS_ERROR_NOT_AVAILABLE: 
+console.warn: "Got a mutation for an unexpected actor: server0.conn0.child2/domnode759, please file a bug on bugzilla.mozilla.org!"
+console.trace: 
+resource://devtools/client/fronts/walker.js 270 getMutations
+console.warn: "Got a mutation for an unexpected actor: server0.conn0.child2/domnode759, please file a bug on bugzilla.mozilla.org!"
+console.trace: 
+resource://devtools/client/fronts/walker.js 270 getMutations
+console.warn: "Got a mutation for an unexpected actor: server0.conn0.child2/domnode759, please file a bug on bugzilla.mozilla.org!"
+console.trace: 
+resource://devtools/client/fronts/walker.js 270 getMutations
+console.warn: "Got a mutation for an unexpected actor: server0.conn0.child2/domnode759, please file a bug on bugzilla.mozilla.org!"
+console.trace: 
+resource://devtools/client/fronts/walker.js 270 getMutations
+console.warn: "Got a mutation for an unexpected actor: server0.conn0.child2/domnode759, please file a bug on bugzilla.mozilla.org!"
+console.trace: 
+resource://devtools/client/fronts/walker.js 270 getMutations
+console.warn: "Got a mutation for an unexpected actor: server0.conn0.child2/domnode759, please file a bug on bugzilla.mozilla.org!"
+console.trace: 
+resource://devtools/client/fronts/walker.js 270 getMutations
+console.warn: "Got a mutation for an unexpected actor: server0.conn0.child2/domnode759, please file a bug on bugzilla.mozilla.org!"
+console.trace: 
+resource://devtools/client/fronts/walker.js 270 getMutations
+console.warn: "Got a mutation for an unexpected actor: server0.conn0.child2/domnode759, please file a bug on bugzilla.mozilla.org!"
+console.trace: 
+resource://devtools/client/fronts/walker.js 270 getMutations
+console.warn: "Got a mutation for an unexpected actor: server0.conn0.child2/domnode759, please file a bug on bugzilla.mozilla.org!"
+console.trace: 
+resource://devtools/client/fronts/walker.js 270 getMutations
+console.warn: "Got a mutation for an unexpected actor: server0.conn0.child2/domnode759, please file a bug on bugzilla.mozilla.org!"
+console.trace: 
+resource://devtools/client/fronts/walker.js 270 getMutations
+console.warn: "Got a mutation for an unexpected actor: server0.conn0.child2/domnode759, please file a bug on bugzilla.mozilla.org!"
+console.trace: 
+resource://devtools/client/fronts/walker.js 270 getMutations
+console.warn: "Got a mutation for an unexpected actor: server0.conn0.child2/domnode759, please file a bug on bugzilla.mozilla.org!"
+console.trace: 
+resource://devtools/client/fronts/walker.js 270 getMutations
+console.warn: "Got a mutation for an unexpected actor: server0.conn0.child2/domnode759, please file a bug on bugzilla.mozilla.org!"
+console.trace: 
+resource://devtools/client/fronts/walker.js 270 getMutations
+console.warn: "Got a mutation for an unexpected actor: server0.conn0.child2/domnode759, please file a bug on bugzilla.mozilla.org!"
+console.trace: 
+resource://devtools/client/fronts/walker.js 270 getMutations
+console.warn: "Got a mutation for an unexpected actor: server0.conn0.child2/domnode759, please file a bug on bugzilla.mozilla.org!"
+console.trace: 
+resource://devtools/client/fronts/walker.js 270 getMutations
+console.warn: "Got a mutation for an unexpected actor: server0.conn0.child2/domnode759, please file a bug on bugzilla.mozilla.org!"
+console.trace: 
+resource://devtools/client/fronts/walker.js 270 getMutations
+console.warn: "Got a mutation for an unexpected actor: server0.conn0.child2/domnode759, please file a bug on bugzilla.mozilla.org!"
+console.trace: 
+resource://devtools/client/fronts/walker.js 270 getMutations
+console.warn: "Got a mutation for an unexpected actor: server0.conn0.child2/domnode759, please file a bug on bugzilla.mozilla.org!"
+console.trace: 
+resource://devtools/client/fronts/walker.js 270 getMutations
+console.warn: "Got a mutation for an unexpected actor: server0.conn0.child2/domnode759, please file a bug on bugzilla.mozilla.org!"
+console.trace: 
+resource://devtools/client/fronts/walker.js 270 getMutations
+console.warn: "Got a mutation for an unexpected actor: server0.conn0.child2/domnode759, please file a bug on bugzilla.mozilla.org!"
+console.trace: 
+resource://devtools/client/fronts/walker.js 270 getMutations
+console.warn: "Got a mutation for an unexpected actor: server0.conn0.child2/domnode757, please file a bug on bugzilla.mozilla.org!"
+console.trace: 
+resource://devtools/client/fronts/walker.js 270 getMutations
+console.warn: "Got a mutation for an unexpected actor: server0.conn0.child2/domnode757, please file a bug on bugzilla.mozilla.org!"
+console.trace: 
+resource://devtools/client/fronts/walker.js 270 getMutations
+console.warn: "Got a mutation for an unexpected actor: server0.conn0.child2/domnode759, please file a bug on bugzilla.mozilla.org!"
+console.trace: 
+resource://devtools/client/fronts/walker.js 270 getMutations
+console.warn: "Got a mutation for an unexpected actor: server0.conn0.child2/domnode759, please file a bug on bugzilla.mozilla.org!"
+console.trace: 
+resource://devtools/client/fronts/walker.js 270 getMutations
+console.warn: "Got a mutation for an unexpected actor: server0.conn0.child2/domnode759, please file a bug on bugzilla.mozilla.org!"
+console.trace: 
+resource://devtools/client/fronts/walker.js 270 getMutations
+JavaScript error: resource://devtools/server/actors/highlighters/utils/markup.js, line 353: NS_ERROR_NOT_AVAILABLE: 
+console.warn: "Got a mutation for an unexpected actor: server0.conn0.child2/domnode759, please file a bug on bugzilla.mozilla.org!"
+console.trace: 
+resource://devtools/client/fronts/walker.js 270 getMutations
+console.warn: "Got a mutation for an unexpected actor: server0.conn0.child2/domnode759, please file a bug on bugzilla.mozilla.org!"
+console.trace: 
+resource://devtools/client/fronts/walker.js 270 getMutations
+console.warn: "Got a mutation for an unexpected actor: server0.conn0.child2/domnode759, please file a bug on bugzilla.mozilla.org!"
+console.trace: 
+resource://devtools/client/fronts/walker.js 270 getMutations
+console.warn: "Got a mutation for an unexpected actor: server0.conn0.child2/domnode759, please file a bug on bugzilla.mozilla.org!"
+console.trace: 
+resource://devtools/client/fronts/walker.js 270 getMutations
+console.warn: "Got a mutation for an unexpected actor: server0.conn0.child2/domnode759, please file a bug on bugzilla.mozilla.org!"
+console.trace: 
+resource://devtools/client/fronts/walker.js 270 getMutations
+console.warn: "Got a mutation for an unexpected actor: server0.conn0.child2/domnode759, please file a bug on bugzilla.mozilla.org!"
+console.trace: 
+resource://devtools/client/fronts/walker.js 270 getMutations
+console.warn: "Got a mutation for an unexpected actor: server0.conn0.child2/domnode759, please file a bug on bugzilla.mozilla.org!"
+console.trace: 
+resource://devtools/client/fronts/walker.js 270 getMutations
+console.warn: "Got a mutation for an unexpected actor: server0.conn0.child2/domnode759, please file a bug on bugzilla.mozilla.org!"
+console.trace: 
+resource://devtools/client/fronts/walker.js 270 getMutations
+console.warn: "Got a mutation for an unexpected actor: server0.conn0.child2/domnode759, please file a bug on bugzilla.mozilla.org!"
+console.trace: 
+resource://devtools/client/fronts/walker.js 270 getMutations
+console.warn: "Got a mutation for an unexpected actor: server0.conn0.child2/domnode759, please file a bug on bugzilla.mozilla.org!"
+console.trace: 
+resource://devtools/client/fronts/walker.js 270 getMutations
+console.warn: "Got a mutation for an unexpected actor: server0.conn0.child2/domnode759, please file a bug on bugzilla.mozilla.org!"
+console.trace: 
+resource://devtools/client/fronts/walker.js 270 getMutations
+console.warn: "Got a mutation for an unexpected actor: server0.conn0.child2/domnode759, please file a bug on bugzilla.mozilla.org!"
+console.trace: 
+resource://devtools/client/fronts/walker.js 270 getMutations
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:226:34
+emit@resource://devtools/shared/event-emitter.js:172:18
+emit@resource://devtools/shared/event-emitter.js:324:18
+getMutations@resource://devtools/client/fronts/walker.js:395:10
+
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2247))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2247))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2247))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2247))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2247))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2247))
+console.warn: "Got a mutation for an unexpected actor: server0.conn0.child2/domnode752, please file a bug on bugzilla.mozilla.org!"
+console.trace: 
+resource://devtools/client/fronts/walker.js 270 getMutations
+console.warn: "Got a mutation for an unexpected actor: server0.conn0.child2/domnode752, please file a bug on bugzilla.mozilla.org!"
+console.trace: 
+resource://devtools/client/fronts/walker.js 270 getMutations
+console.warn: "Got a mutation for an unexpected actor: server0.conn0.child2/domnode752, please file a bug on bugzilla.mozilla.org!"
+console.trace: 
+resource://devtools/client/fronts/walker.js 270 getMutations
+console.warn: "Got a mutation for an unexpected actor: server0.conn0.child2/domnode752, please file a bug on bugzilla.mozilla.org!"
+console.trace: 
+resource://devtools/client/fronts/walker.js 270 getMutations
+console.warn: "Got a mutation for an unexpected actor: server0.conn0.child2/domnode781, please file a bug on bugzilla.mozilla.org!"
+console.trace: 
+resource://devtools/client/fronts/walker.js 270 getMutations
+console.warn: "Got a mutation for an unexpected actor: server0.conn0.child2/domnode781, please file a bug on bugzilla.mozilla.org!"
+console.trace: 
+resource://devtools/client/fronts/walker.js 270 getMutations
+1592992239918	Marionette	INFO	Stopped listening on port 64805
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
