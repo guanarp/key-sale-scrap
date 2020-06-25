@@ -180,3 +180,107 @@ resource://devtools/client/fronts/walker.js 270 getMutations
 
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
+1593037509712	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DELL\\AppData\\Local\\Temp\\rust_mozprofile35xgsv"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1593037511839	Marionette	INFO	Listening on port 60436
+1593037511935	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593037999331	Marionette	INFO	Stopped listening on port 60436
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1593037809280	Marionette	INFO	Listening on port 58443
+1593037809544	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593038000327	Marionette	INFO	Stopped listening on port 58443
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1593037958116	Marionette	INFO	Listening on port 58594
+1593037958307	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593037996837	Marionette	INFO	Stopped listening on port 58594
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1593038148244	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DELL\\AppData\\Local\\Temp\\rust_mozprofilezvE65R"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1593038150185	Marionette	INFO	Listening on port 58792
+1593038150387	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://ssl.widgets.webengage.com/js/webengage-min-v-6.0.js, line 4: Script terminated by timeout at:
+compress@https://ssl.widgets.webengage.com/js/webengage-min-v-6.0.js:4:30041
+compressToBase64@https://ssl.widgets.webengage.com/js/webengage-min-v-6.0.js:4:28919
+r@https://ssl.widgets.webengage.com/js/webengage-min-v-6.0.js:2:23698
+o@https://ssl.widgets.webengage.com/js/webengage-min-v-6.0.js:2:24125
+a@https://ssl.widgets.webengage.com/js/webengage-min-v-6.0.js:2:24210
+guard/<@https://ssl.widgets.webengage.com/js/webengage-min-v-6.0.js:4:27785
+
+1593040577333	Marionette	INFO	Stopped listening on port 58792
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1593039176668	Marionette	INFO	Listening on port 59185
+1593039176747	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593039672859	Marionette	INFO	Stopped listening on port 59185
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1593039670687	Marionette	INFO	Listening on port 59433
+1593039671075	Marionette	WARN	TLS certificate errors will be ignored for this session
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1593040086053	Marionette	INFO	Stopped listening on port 59433
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error1593040087156	Marionette	INFO	Stopped listening on port 59579
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1593039811290	Marionette	INFO	Listening on port 59726
+1593039811459	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593040088097	Marionette	INFO	Stopped listening on port 59726
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1593039917659	Marionette	INFO	Listening on port 59883
+1593039917692	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593040089138	Marionette	INFO	Stopped listening on port 59883
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1593040448362	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DELL\\AppData\\Local\\Temp\\rust_mozprofilec1H5FR"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1593040450332	Marionette	INFO	Listening on port 60120
+1593040450480	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 114: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1593042833517	Marionette	INFO	Stopped listening on port 60120
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
