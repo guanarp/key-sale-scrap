@@ -1,14 +1,15 @@
-1592993661357	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Guana\\AppData\\Local\\Temp\\rust_mozprofiletkbKFd"
+1593069849706	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Guana\\AppData\\Local\\Temp\\rust_mozprofileh6F756"
 JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
-1592993662752	Marionette	INFO	Listening on port 51361
-1592993662887	Marionette	WARN	TLS certificate errors will be ignored for this session
-1592993697627	Marionette	INFO	Stopped listening on port 51262
+1593069851271	Marionette	INFO	Listening on port 53787
+1593069851734	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593070349901	Marionette	INFO	Stopped listening on port 53787
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
 
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
- message was deserialized, but the handler returned false (indicating failure)
-
-1592993696039	Marionette	INFO	Stopped listening on port 51109
+nette	INFO	Stopped listening on port 53291
 
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
@@ -17,15 +18,14 @@ l be lost
 
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
-te to send/recv, messages will be lost
+nette	INFO	Stopped listening on port 50055
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
 
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
- send/recv
-
-rkup.js, line 353: NS_ERROR_NOT_AVAILABLE: 
-JavaScript error: resource://devtools/server/actors/highlighters/utils/markup.js, line 353: NS_ERROR_NOT_AVAILABLE: 
+r/actors/highlighters/utils/markup.js, line 353: NS_ERROR_NOT_AVAILABLE: 
 JavaScript error: resource://devtools/server/actors/highlighters/utils/markup.js, line 353: NS_ERROR_NOT_AVAILABLE: 
 JavaScript error: resource://devtools/server/actors/highlighters/utils/markup.js, line 353: NS_ERROR_NOT_AVAILABLE: 
 JavaScript error: resource://devtools/server/actors/highlighters/utils/markup.js, line 353: NS_ERROR_NOT_AVAILABLE: 

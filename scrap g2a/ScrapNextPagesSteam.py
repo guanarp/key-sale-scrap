@@ -8,27 +8,16 @@ from selenium.common.exceptions import TimeoutException #para manejar tiemouts
 import pprint
 import csv
 
-browser = webdriver.Firefox()
-wait = WebDriverWait(browser, 10)
-
-titulos_steam = []
-linksElementos_steam = []
-links_steam = []
-val = []
-precios_steam = []
-preciosGs_steam = []
-linkImg_steam = []
-
 def filtroEuros(titulo,precio,link,linkImg):
     index = 0
-    print(titulo)
+    #print(titulo)
     for x in precio:
         if x.find(" EUR")!=-1:
             print("articulo borrado, en euros")
             print(titulo[index])
             print(index)
             del titulo[index],precio[index],link[index],linkImg[index]
-            print(titulo)
+            #print(titulo)
         else:
             index+=1
 
@@ -42,20 +31,14 @@ def filtroRegion(titulo,precio,link,linkImg):
             del titulo[index],precio[index],link[index],linkImg[index]
         else:
             index+=1
+        
 
-def inicializador(contador):
-    titulos_steam = []
-    linksElementos_steam = []
-    links_steam = []
-    val = []
-    precios_steam = []
-    preciosGs_steam = []
-    linkImg_steam = []
-    if contador ==1:
-        browser.get("https://www.g2a.com/category/games-c189?drm[5]=1&banner=m1")
-    elif contador >1:
-        link = "https://www.g2a.com/category/games-c189?drm[5]=1&banner=m1" + "&page=" + str(contador) 
-        browser.get(link)    
+
+browser = webdriver.Firefox()
+for contador in range(2,51):
+    link = "https://www.g2a.com/category/games-c189?drm[5]=1&banner=m1" + "&page=" + str(contador) 
+    browser.get(link) 
+    wait = WebDriverWait(browser, 10)
 
     # Wait 20 seconds for page to load
     timeout = 20
@@ -67,9 +50,7 @@ def inicializador(contador):
         print("Timed out waiting for page to load")
         browser.quit()
 
-    browser.execute_script("window.scrollTo(0, document.body.scrollHeight);") #esto lo que hace es hacer un scroll hasta el fondo una vez cargada toda la pag, para evitar perder informacion dinamicamente cargada, con un script de javasript                
-
-def scrap():
+    browser.execute_script("window.scrollTo(0, document.body.scrollHeight);") #esto lo que hace es hacer un scroll hasta el fondo una vez cargada toda la pag, para evitar perder informacion dinamicamente cargada, con un script de javasript
 
     # find_elements_by_xpath retorna un arreglo de objetos selenium.
     titulosElementos_steam = browser.find_elements_by_xpath("//h3[@class='Card__title']") #busca los titulos de los juegos, el xpath busca path, dice "busca la etiqueta h3 con el atributo class igual a card title"
@@ -84,6 +65,8 @@ def scrap():
     precios_steam = [str(i.text) for i in preciosElementos_steam]
 
 
+    linksElementos_steam = []
+    links_steam = []
     for i in range(len(titulos_steam)):
         linksElementos_steam.append( browser.find_element_by_link_text(titulos_steam[i]) ) 
     for href in linksElementos_steam:
@@ -91,26 +74,29 @@ def scrap():
 
     #print(links_steam) 
 
-    linkImgElementos_steam = wait.until(EC.visibility_of_element_located((By.CLASS_NAME, 'lazy-image__img'))) #espera a que se cargue
+    linkImgElementos_steam = wait.until(EC.visibility_of_element_located((By.CLASS_NAME, 'lazy-image__img')))
     linkImgElementos_steam = browser.find_elements_by_xpath("//img[@class='lazy-image__img']")
+    linkImg_steam = []
 
     for src in linkImgElementos_steam: 
         if str(src.get_attribute("src")) != "None":
             linkImg_steam.append( str(src.get_attribute("src")) )
         else:
-            linkImg_steam.append( str(src.get_attribute("data-src")) ) #para las imagenes que no carga por no estar en pantalla    
+            linkImg_steam.append( str(src.get_attribute("data-src")) )    
 
     filtroEuros(titulos_steam,precios_steam,links_steam,linkImg_steam)
     filtroRegion(titulos_steam,precios_steam,links_steam,linkImg_steam)
 
     #print(precios_steam)
-    cotizacion_dolar = 6800 #a scrapear proximamente
+    cotizacion_dolar = 6800
+    val = []
+    preciosGs_steam = []
     for index in precios_steam:
         try:
             val.append( float(index.replace("USD","")) )
         except ValueError:
             continue    
-    print(val)
+    #print(val)
     for j in val:
         preciosGs_steam.append (float(j) *1.3 * cotizacion_dolar)
     #print(preciosGs_steam)
@@ -120,37 +106,25 @@ def scrap():
     #print(len(precios_steam))
 
     for x in range(len(precios_steam)): #impresion titulo + precio
-        print(titulos_steam[x] + " --- " + precios_steam[x])
+        continue
+        #print(titulos_steam[x] + " --- " + precios_steam[x])
+    print("Estamos en la pagina" + str(contador))
+    print(len(titulos_steam))
+    print(len(precios_steam))
+    print(len(preciosGs_steam))
+    print(len(links_steam))
+    print(len(linkImg_steam))
 
-def xlwriter(contador):  
+
     try:
-        if contador == 1:
-            param = "wb"
-        else:
-            param = "a"  
-        with open( "listaSteamDePrueba.csv",param) as data_temp: #a de append , w de write, el newline="" (para python 3.x) hace que no haya filas de espacio entre los items, en python 2.x tengo que usar "wb"
-            contador = 0
+        with open( "listaSteam.csv","ab") as data_temp: #a de append , w de write, el newline="" (para python 3.x) hace que no haya filas de espacio entre los items, en python 2.x tengo que usar "wb"
             nombrecolum = ["Titulo" , "Precio", "En Gs", "Link", "Img"]
             writer = csv.DictWriter(data_temp,nombrecolum)
-            if contador == 0:
-                writer.writeheader() #esto coloca header
-                contador+=1
-            #lo de arriba especifica el archivo con sus nombres de columnas
             for x in range(len(titulos_steam)):
                 writer.writerow( {"Titulo":titulos_steam[x], "Precio": precios_steam[x],"En Gs":preciosGs_steam[x], "Link":links_steam[x], "Img": linkImg_steam[x], })
     except TypeError:
-        if contador == 1:
-            param = "w"
-        else:
-            param = "a"  
-        with open( "listaSteam.csv",param,newline="") as data_temp: #a de append , w de write, el newline="" (para python 3.x) hace que no haya filas de espacio entre los items, en python 2.x tengo que usar "wb"
-            contador = 0
+        with open( "listaSteam.csv","a",newline="") as data_temp: #a de append , w de write, el newline="" (para python 3.x) hace que no haya filas de espacio entre los items, en python 2.x tengo que usar "wb"
             nombrecolum = ["Titulo" , "Precio", "En Gs", "Link", "Img"]
             writer = csv.DictWriter(data_temp,nombrecolum)
-            if contador == 0:
-                writer.writeheader() #esto coloca header
-                contador+=1
-            #lo de arriba especifica el archivo con sus nombres de columnas
             for x in range(len(titulos_steam)):
                 writer.writerow( {"Titulo":titulos_steam[x], "Precio": precios_steam[x],"En Gs":preciosGs_steam[x], "Link":links_steam[x], "Img": linkImg_steam[x], })
-

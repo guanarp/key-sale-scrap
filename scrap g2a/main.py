@@ -1,6 +1,6 @@
 import ScrapFunctions
 
-for contador in range (1,101):
+for contador in range (1,6):
     ScrapFunctions.inicializador(contador)
-    ScrapFunctions.scrap()
-    ScrapFunctions.xlwriter(contador)
+    ScrapFunctions.scrap(contador)
+    #ScrapFunctions.xlwriter(contador)
