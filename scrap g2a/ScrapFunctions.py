@@ -11,6 +11,14 @@ import csv
 browser = webdriver.Firefox()
 wait = WebDriverWait(browser, 10)
 
+titulos_steam = []
+linksElementos_steam = []
+links_steam = []
+val = []
+precios_steam = []
+preciosGs_steam = []
+linkImg_steam = []
+
 def filtroEuros(titulo,precio,link,linkImg):
     index = 0
     print(titulo)
@@ -36,11 +44,18 @@ def filtroRegion(titulo,precio,link,linkImg):
             index+=1
 
 def inicializador(contador):
+    titulos_steam = []
+    linksElementos_steam = []
+    links_steam = []
+    val = []
+    precios_steam = []
+    preciosGs_steam = []
+    linkImg_steam = []
     if contador ==1:
-        get = browser.get("https://www.g2a.com/category/games-c189?drm[5]=1&banner=m1")
+        browser.get("https://www.g2a.com/category/games-c189?drm[5]=1&banner=m1")
     elif contador >1:
         link = "https://www.g2a.com/category/games-c189?drm[5]=1&banner=m1" + "&page=" + str(contador) 
-        get = browser.get(link)    
+        browser.get(link)    
 
     # Wait 20 seconds for page to load
     timeout = 20
@@ -54,7 +69,7 @@ def inicializador(contador):
 
     browser.execute_script("window.scrollTo(0, document.body.scrollHeight);") #esto lo que hace es hacer un scroll hasta el fondo una vez cargada toda la pag, para evitar perder informacion dinamicamente cargada, con un script de javasript                
 
-def scrap(contador):
+def scrap():
 
     # find_elements_by_xpath retorna un arreglo de objetos selenium.
     titulosElementos_steam = browser.find_elements_by_xpath("//h3[@class='Card__title']") #busca los titulos de los juegos, el xpath busca path, dice "busca la etiqueta h3 con el atributo class igual a card title"
@@ -69,8 +84,6 @@ def scrap(contador):
     precios_steam = [str(i.text) for i in preciosElementos_steam]
 
 
-    linksElementos_steam = []
-    links_steam = []
     for i in range(len(titulos_steam)):
         linksElementos_steam.append( browser.find_element_by_link_text(titulos_steam[i]) ) 
     for href in linksElementos_steam:
@@ -80,7 +93,6 @@ def scrap(contador):
 
     linkImgElementos_steam = wait.until(EC.visibility_of_element_located((By.CLASS_NAME, 'lazy-image__img'))) #espera a que se cargue
     linkImgElementos_steam = browser.find_elements_by_xpath("//img[@class='lazy-image__img']")
-    linkImg_steam = []
 
     for src in linkImgElementos_steam: 
         if str(src.get_attribute("src")) != "None":
@@ -93,8 +105,6 @@ def scrap(contador):
 
     #print(precios_steam)
     cotizacion_dolar = 6800 #a scrapear proximamente
-    val = []
-    preciosGs_steam = []
     for index in precios_steam:
         try:
             val.append( float(index.replace("USD","")) )
@@ -112,14 +122,13 @@ def scrap(contador):
     for x in range(len(precios_steam)): #impresion titulo + precio
         print(titulos_steam[x] + " --- " + precios_steam[x])
 
-def xlwriter(contador):
-    scrap(contador)  
+def xlwriter(contador):  
     try:
         if contador == 1:
             param = "wb"
         else:
             param = "a"  
-        with open( "listaSteam.csv",param) as data_temp: #a de append , w de write, el newline="" (para python 3.x) hace que no haya filas de espacio entre los items, en python 2.x tengo que usar "wb"
+        with open( "listaSteamDePrueba.csv",param) as data_temp: #a de append , w de write, el newline="" (para python 3.x) hace que no haya filas de espacio entre los items, en python 2.x tengo que usar "wb"
             contador = 0
             nombrecolum = ["Titulo" , "Precio", "En Gs", "Link", "Img"]
             writer = csv.DictWriter(data_temp,nombrecolum)

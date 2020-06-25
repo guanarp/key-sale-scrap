@@ -284,3 +284,41 @@ JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't fin
 
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
+1593049772034	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DELL\\AppData\\Local\\Temp\\rust_mozprofileidgAGb"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1593049776350	Marionette	INFO	Listening on port 63882
+1593049776383	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.g2a.com/category/games-c189?drm[5]=1&banner=m1&page=2 line 6386 > scriptElement, line 1: TypeError: webengage.user.getAnonymousId is not a function
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1593050413237	Marionette	INFO	Stopped listening on port 63882
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error1593050414410	Marionette	INFO	Stopped listening on port 64241
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+ile" "C:\\Users\\DELL\\AppData\\Local\\Temp\\rust_mozprofileWYFBxH"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1593050413082	Marionette	INFO	Listening on port 64382
+1593050413447	Marionette	WARN	TLS certificate errors will be ignored for this session
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1593050514158	Marionette	INFO	Stopped listening on port 64382
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1593050652773	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DELL\\AppData\\Local\\Temp\\rust_mozprofileFhHWl0"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1593050656509	Marionette	INFO	Listening on port 64640
+1593050656611	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.g2a.com/category/games-c189?drm[5]=1&banner=m1&page=2 line 6386 > scriptElement, line 1: TypeError: webengage.user.getAnonymousId is not a function
